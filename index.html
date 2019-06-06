@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GIFxpression</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="display-1">How do you feel!<span class="accent">.</span></h1>
+      </div>
+
+      <div class="rating">
+        <div class="about">
+          Tell me all about it:
+          <button
+            type="button"
+            class="btn btn-info"
+            data-toggle="modal"
+            data-target="#explanationModal"
+          >
+            About...
+          </button>
+        </div>
+        <br />
+      
+      <div
+        class="modal fade"
+        id="explanationModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="explanationModalTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="explanationModalTitleLong">About</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                This web application uses the Giffy api to return a number a Gifs that attempt to match the expression you have presented to the app.
+
+              </p>
+              <p>
+                Start by selecting a rating. Click on a button that has the
+                text of the expression you wish to view GIFs for! You can also enter your
+                own unique expression in the textbox and select using the enter key.
+                You can then select the button to view the related gifs from the internet.
+              </p>
+
+           </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                End
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons"></div>
+      <form action="#">
+        <div class="expressions form-group">
+          <input
+            type="text"
+            id="expression"
+            class="form-control"
+            placeholder="What would you like to express with a GIF?"
+          />
+      
+        </div>
+      </form>
+
+      <div class="gifs">
+        <div class="card-columns"></div>
+      
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    
+    <script src="./assets/javascript/app.js"></script>
+  </body>
+</html>
